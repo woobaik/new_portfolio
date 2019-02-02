@@ -42,6 +42,13 @@ end
 
 puts '##### 5 Portfolio item has created #####'
 
+5.times do |topic|
+  Topic.create(name: 'Ruby on Rails',
+               blog_id: Blog.first.id)
+end
+
+puts '##### Add 5 Topics #####'
+
 7.times do |skill|
   Skill.create(title: "Skill Number #{skill + 1}",
                percent_utilize: 30)
