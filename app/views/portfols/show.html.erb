@@ -3,8 +3,8 @@
 <h6> <%= @portfol.body %> </h6>
 
 <p>
-  <%= image_tag @portfol.main_image alt: 'Main'if @portfol.main_image %>
-  <%= image_tage @portfol.thumb_image alt: 'thumb_image' if @portfol.thumb_image %>
+  <%= image_tag @portfol.main_image, alt: 'Main'if @portfol.main_image %>
+  <%= image_tag @portfol.thumb_image, alt: 'thumb_image' if @portfol.thumb_image %>
 </p>
 
 <p>
@@ -13,4 +13,8 @@
     <% else %>
     Updated <%= time_ago_in_words(@portfol.updated_at) %> ago
   <% end %>
+</p>
+
+<p>
+  <%= link_to "Portfolio List", portfols_path %>
 </p>

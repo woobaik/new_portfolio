@@ -1,1 +1,11 @@
-<%= @portfols %>
+<% @portfols.each do |portfolio| %>
+  <h3>
+    <%= link_to portfolio.title, portfolio %>
+  </h3>
+  <%= link_to 'Edit Portfolio', edit_portfol_path(portfolio) %>
+  <% if portfolio.created_at == portfolio.updated_at %>
+    <h6> Created <%= time_ago_in_words(portfolio.created_at) %> ago </h6>
+  <% else %>
+    <h6> Updated <%= time_ago_in_words(portfolio.updated_at) %> ago </h6>
+  <% end %>
+<% end %>

@@ -1,7 +1,7 @@
 class PortfolsController < ApplicationController
 
     def index
-      @portfols = Portfol.all
+      @portfols = Portfol.all.order(created_at: :asc)
     end
 
     def new
