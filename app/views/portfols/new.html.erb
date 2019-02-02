@@ -1,0 +1,21 @@
+<h1>Portfolio</hi>
+
+<%= form_for @portfol do |f| %>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  <p>
+
+  <p>
+    <%= f.label :subtitle %>
+    <%= f.text_field :subtitle %>
+  </p>
+
+  <p>
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </p>
+
+  <%= f.submit 'Submit' %>
+
+<% end %>
