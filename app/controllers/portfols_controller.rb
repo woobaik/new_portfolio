@@ -1,5 +1,5 @@
 class PortfolsController < ApplicationController
-    before_action :find_portfolio, only: [:show]
+    before_action :find_portfolio, only: [:show, :edit, :update, :delete]
     def index
       @portfols = Portfol.all.order(created_at: :asc)
     end
@@ -17,18 +17,22 @@ class PortfolsController < ApplicationController
     end
 
     def edit
-      @portfol = Portfol.find(params[:id])
     end
 
     def update
-      @portfol = Portfol.find(params[:id])
-
       if @portfol.update
         redirect_to @portfol
       end
     end
 
     def show
+    end
+
+    def destroy
+      if @portfol.destroy
+        redirect_to home_path
+      end
+
     end
 
   private
