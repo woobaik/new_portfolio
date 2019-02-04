@@ -6,6 +6,7 @@ class PortfolsController < ApplicationController
 
     def new
       @portfol = Portfol.new
+      3.times {@portfol.technologies.build}
     end
 
     def create
@@ -13,6 +14,8 @@ class PortfolsController < ApplicationController
 
       if @portfol.save
         redirect_to @portfol
+      else
+        render :new
       end
     end
 
@@ -38,7 +41,7 @@ class PortfolsController < ApplicationController
   private
 
     def find_portfolio
-      @portfol = Portfol.friendly.find(params[:id])
+      @portfol = Portfol.find(params[:id])
     end
 
     def portfol_params
@@ -46,6 +49,7 @@ class PortfolsController < ApplicationController
                                       :subtitle,
                                       :body,
                                       :main_image,
-                                      :thumb_image)
+                                      :thumb_image,
+                                      technologies_attributes: [:name])
     end
 end
