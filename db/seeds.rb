@@ -42,6 +42,15 @@ end
 
 puts '##### 5 Portfolio item has created #####'
 
+3.times do |technology|
+  Technology.create(
+    name: "Technology #{technology}",
+    portfol_id: Portfol.last.id
+  )
+end
+
+puts '###### 3 technology created!'
+
 5.times do |topic|
   Topic.create(name: 'Ruby on Rails',
                blog_id: Blog.first.id)

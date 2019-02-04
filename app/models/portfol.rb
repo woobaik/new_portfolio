@@ -1,4 +1,5 @@
 class Portfol < ApplicationRecord
+  has_many :technologies
   include Placeholder
   validates :title, :subtitle,
             :body, :main_image,
