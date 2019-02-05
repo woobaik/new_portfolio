@@ -20,5 +20,11 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
+    <p>
+      <% if session[:source] %>
+      Thanks for visiting me from <strong> <%= session[:source] %> </strong>
+      <% end %>
+    </p>
+
   </body>
 </html>
