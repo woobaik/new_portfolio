@@ -5,11 +5,13 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     @blogs = Blog.all.order(created_at: :asc)
+    @title = "Blogs || Joungwoo baik"
   end
 
   # GET /blogs/1
   # GET /blogs/1.json
   def show
+    @title = @blog.title
   end
 
   # GET /blogs/new

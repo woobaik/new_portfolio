@@ -1,4 +1,5 @@
 class PortfolsController < ApplicationController
+    before_action :set_title
     before_action :find_portfolio, only: [:show, :edit, :update, :delete]
     def index
       @portfols = Portfol.all.order(created_at: :asc)
@@ -39,6 +40,10 @@ class PortfolsController < ApplicationController
     end
 
   private
+
+    def set_title
+      @title = "Portfolio || Joungwoo baik"
+    end
 
     def find_portfolio
       @portfol = Portfol.find(params[:id])
