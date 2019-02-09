@@ -9,7 +9,6 @@ module CurrentUser
 
   def current_user
     super
-    current_user ||= OpenStruct.new(first_name: 'Guest')
   end
 
 end
