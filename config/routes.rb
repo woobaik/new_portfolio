@@ -9,7 +9,7 @@ Rails.application.routes.draw do
       get 'toggle_status'
     end
   end
-  root 'portfols#index'
+  root 'pages#home'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

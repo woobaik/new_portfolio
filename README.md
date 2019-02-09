@@ -1,11 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Colors
 
-Things you may want to cover:
+
+#Font
+
 
 * Ruby version
+  ruby 2.5.3p105 (2018-10-18 revision 65156)
 
 * System dependencies
 

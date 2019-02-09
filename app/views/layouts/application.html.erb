@@ -2,6 +2,7 @@
 <html>
   <head>
     <title> <%= @title %></title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Varela+Round|Abril+Fatface" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,9 +11,7 @@
   </head>
 
   <body>
-    <%= render "shared/navigation" %>
-    <%= current_user_helper %>
-
+    <%= render 'shared/navigation' %>
     <%= "Hi, #{current_user.first_name}" if current_user %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>

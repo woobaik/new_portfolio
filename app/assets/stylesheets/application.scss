@@ -1,1 +1,43 @@
 @import 'bootstrap';
+/* Coolors Exported Palette - coolors.co/f8ffe5-06d6a0-1b9aaa-ef476f-ffc43d */
+
+/* HSL */
+$color1: hsla(76%, 100%, 95%, 1);
+$color2: hsla(164%, 95%, 43%, 1);
+$color3: hsla(187%, 73%, 39%, 1);
+$color4: hsla(346%, 84%, 61%, 1);
+$color5: hsla(42%, 100%, 62%, 1);
+
+/* RGB */
+$color1: rgba(248, 255, 229, 1);
+$color2: rgba(6, 214, 160, 1);
+$color3: rgba(27, 154, 170, 1);
+$color4: rgba(239, 71, 111, 1);
+$color5: rgba(255, 196, 61, 1);
+$color6: #440381;
+$color7: #FFA5A5;
+
+
+.custom-nav {
+  background-color: $color4
+}
+
+.custom-nav-brand {
+  color: $color1;
+  font-family: 'Lobster', cursive;
+
+
+}
+.custom-nav-brand:hover {
+  color: $color1;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: #FFA5A5;
+  font-family: 'Varela Round', sans-serif;
+}
+.nav-link:hover {
+  color: #331832;
+  font-family: 'Varela Round', sans-serif;
+}
