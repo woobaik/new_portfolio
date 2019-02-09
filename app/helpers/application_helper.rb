@@ -7,11 +7,23 @@ module ApplicationHelper
       ' ' +
       (link_to 'Sign up', new_user_registration_path, class: 'nav-link')
     end
-  end
+end
 
   def session_helper
     if session[:source]
       "Thanks for visit me from <strong>#{session[:source]}</strong>".html_safe
+    end
+  end
+
+  def notice_helper
+    if notice
+      "<p class='notice'>#{notice}</p>".html_safe
+    end
+  end
+
+  def alert_helper
+    if alert
+      "<p class='alert'>#{alert}</p>".html_safe
     end
   end
 
