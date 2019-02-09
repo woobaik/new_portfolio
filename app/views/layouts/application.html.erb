@@ -18,9 +18,7 @@
     <p class="alert"><%= alert %></p>
     <%= yield %>
     <p>
-      <% if session[:source] %>
-      Thanks for visiting me from <strong> <%= session[:source] %> </strong>
-      <% end %>
+      <%= session_helper %>
     </p>
 
   </body>

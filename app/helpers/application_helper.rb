@@ -7,7 +7,12 @@ module ApplicationHelper
       ' ' +
       (link_to 'Sign up', new_user_registration_path)
     end
+  end
 
+  def session_helper
+    if session[:source]
+      "Thanks for visit me from <strong>#{session[:source]}</strong>".html_safe
+    end
   end
 
 end
