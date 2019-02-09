@@ -11,6 +11,10 @@
 
 * System dependencies
 
+gem 'bootstrap', '~> 4.2.1'
+gem 'jquery-rails'
+gem 'petergate'
+
 * Configuration
 
 * Database creation

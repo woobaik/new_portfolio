@@ -2,10 +2,6 @@ class ApplicationController < ActionController::Base
   include DeviseWhitelist
   include SetSource
   include CurrentUser
+  include SetTitle
 
-  before_action :set_title
-
-  def set_title
-    @title ||= "Joungwoo Baik"
-  end
 end
