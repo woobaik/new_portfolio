@@ -68,3 +68,5 @@ gem 'jquery-rails'
 
 #https://github.com/elorest/petergate
 gem 'petergate'
+#https://github.com/jquery-ui-rails/jquery-ui-rails
+gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
