@@ -2,7 +2,7 @@ class PortfolsController < ApplicationController
     before_action :set_title
     before_action :find_portfolio, only: [:show, :edit, :update, :delete]
     def index
-      @portfols = Portfol.all.order(created_at: :asc)
+      @portfols = Portfol.by_position
     end
 
     def new
