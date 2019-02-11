@@ -1,0 +1,9 @@
+<div class="card">
+
+  <%= image_tag portfol.thumb_image if portfol.thumb_image %>
+  <p class="card-text">
+    <span>
+      <%= link_to portfol.title, portfol_path(portfol) %>
+    </span> <%= portfol.subtitle %>
+  </p>
+</div>
