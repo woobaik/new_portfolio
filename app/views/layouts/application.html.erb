@@ -17,7 +17,11 @@
     <%= notice_helper %>
     <%= alert_helper %>
     <div class="home-body">
-      <%= yield %>
+      <div class="container">
+        <div class="jumbotron custom-jumbotron">
+          <%= yield %>
+        </div>
+      </div>
     </div>
     <p>
       <%= session_helper %>
