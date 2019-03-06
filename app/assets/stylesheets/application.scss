@@ -59,3 +59,22 @@ p.notice, p.alert {
 .hire-me-btn {
   font-family: 'Staatliches', cursive;
 }
+.dropdown {
+    .dropdown-menu {
+        transition: all 0.5s;
+        overflow: hidden;
+        transform-origin: top center;
+        transform: scale(1,0);
+        display: block;
+    }
+    &:hover {
+        .dropdown-menu {
+            transform: scale(1);
+        }
+    }
+}
+
+.current-user-display {
+    color: $color5;
+    font-family: 'Luckiest Guy', cursive;
+}
