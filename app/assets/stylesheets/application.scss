@@ -1,3 +1,5 @@
+@import "font-awesome-sprockets";
+@import "font-awesome";
 @import 'bootstrap';
 @import 'jquery-ui';
 @import "/\*";
@@ -82,4 +84,8 @@ p.notice, p.alert {
 
 #forgot-password {
   color: #DDD92A;
+}
+
+.site-icons {
+  color: $color5;
 }

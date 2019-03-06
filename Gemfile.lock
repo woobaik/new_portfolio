@@ -90,6 +90,8 @@ GEM
     erubi (1.8.0)
     execjs (2.7.0)
     ffi (1.9.25)
+    font-awesome-sass (5.6.1)
+      sassc (>= 1.11)
     friendly_id (5.0.5)
       activerecord (>= 4.0.0)
     globalid (0.4.2)
@@ -240,6 +242,7 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise
+  font-awesome-sass (~> 5.6, >= 5.6.1)
   friendly_id (~> 5.0.0)
   jbuilder (~> 2.5)
   jquery-rails

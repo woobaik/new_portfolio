@@ -65,6 +65,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.2.1'
 gem 'jquery-rails'
+gem 'font-awesome-sass', '~> 5.6', '>= 5.6.1'
 
 #https://github.com/elorest/petergate
 gem 'petergate'
