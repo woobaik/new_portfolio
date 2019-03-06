@@ -3,9 +3,9 @@ module ApplicationHelper
     if current_user
       link_to 'Log Out', destroy_user_session_path, method: :delete, class: 'nav-link'
     else
-      (link_to 'Log in', new_user_session_path, class: 'nav-link') +
+      (link_to 'Log in', new_user_session_path, class: "btn btn-outline-success my-2 my-sm-1 mx-2") +
       ' ' +
-      (link_to 'Sign up', new_user_registration_path, class: 'nav-link')
+      (link_to 'Sign up', new_user_registration_path, class: "btn btn-outline-success my-2 my-sm-1 mx-2")
     end
 end
 
