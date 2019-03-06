@@ -1,5 +1,6 @@
 @import 'bootstrap';
 @import 'jquery-ui';
+@import "/\*";
 /* Coolors Exported Palette - coolors.co/f8ffe5-06d6a0-1b9aaa-ef476f-ffc43d */
 
 /* HSL */
@@ -9,15 +10,27 @@ $color3: #702632;
 $color4: #912F40;
 $color5: #FFFFFA;
 
+body {
+  background: url('my-computer.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, .7);
+  background-blend-mode: darken;
+}
 
 
 .custom-nav {
-  background-color: $color1
+  background-color: transparent;
+  height: 15vh;
+  font-family: 'Special Elite', cursive;
 }
 
 .custom-nav-brand {
   color: $color5;
-  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 3em;
 
 
 }
@@ -28,11 +41,11 @@ $color5: #FFFFFA;
 
 .nav-link {
   color: $color4;
-  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-family: 'Luckiest Guy', cursive;
 }
 .nav-link:hover {
-  color: #702632;
-  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  color: #FFFFFA;
+  font-family: 'Luckiest Guy', cursive;
 }
 
 .custom-nav-toggler {
@@ -41,4 +54,8 @@ $color5: #FFFFFA;
 
 p.notice, p.alert {
   margin-bottom: 0;
+}
+
+.hire-me-btn {
+  font-family: 'Staatliches', cursive;
 }

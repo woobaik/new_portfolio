@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title> <%= @title %></title>
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Varela+Round|Abril+Fatface|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Special+Elite|Bangers|Staatliches" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -15,7 +17,9 @@
     <%= "Hi, #{current_user.first_name}" if current_user %>
     <%= notice_helper %>
     <%= alert_helper %>
-    <%= yield %>
+    <div class="home-body">
+      <%= yield %>
+    </div>
     <p>
       <%= session_helper %>
     </p>

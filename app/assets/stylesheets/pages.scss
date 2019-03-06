@@ -3,5 +3,26 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .home-body {
-  background-color: rgba(248, 255, 229, 1);
+  background: url('my-computer.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, .7);
+  background-blend-mode: darken;
+}
+
+.custom-jumbotron {
+  background: rgba(204, 204, 204, 0.2);
+  color: #FFFFFA;
+  height: 70vh;
+  margin-top: 30px;
+}
+
+.home-title {
+  font-family: 'Bangers', cursive;
+}
+
+#my-name {
+  color: #0197F6
 }
