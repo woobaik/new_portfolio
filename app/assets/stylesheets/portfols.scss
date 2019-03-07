@@ -9,15 +9,35 @@
     width: 20px;
     height: 12px;
     background-color: #404040;
-    
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: #0197F6;
+  background-size: 100%, 100%;
 }
 
 .portfol-title {
-  color: black;
   font-size: 2em;
+  font-family: 'Luckiest Guy', cursive;
 }
 
 
 .portfol-subtitle {
-  
+  color: black;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.card-title {
+  color: black;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.portfol-show-all {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.portfol-show-title {
+  color: #0197F6;
+  font-family: 'Luckiest Guy', cursive;
 }

@@ -5,6 +5,10 @@ class PortfolsController < ApplicationController
       @portfols = Portfol.by_position
     end
     
+    def index_all
+      @portfols = Portfol.by_position
+    end
+    
     def sort
       params[:order].each do |key, value|
         Portfolio.find(value[:id]).update(position: value[:position])

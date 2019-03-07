@@ -1,5 +1,7 @@
 <h1 class="display-2 home-title text-center">This is my <span id="my-name">Portfolio!!</span></h1>
-
+<div class="text-right mb-4">
+  <%= link_to "View All Portfolios", all_portfolio_path, class:"btn btn-info text-right"  %>
+</div>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -11,7 +13,7 @@
   <div class="carousel-inner">
     <% @portfols.each_with_index do |portfol, idx| %>
       <div class="carousel-item <%= idx.zero? ? 'active' : '' %>">
-        <%= link_to portfol.url_address do %>
+        <%= link_to portfol_path(portfol) do %>
           <%= image_tag(portfol.main_image, class: 'd-block w-100 image-fluid') %>
         <% end %>
         <div class="carousel-caption d-none d-md-block">
@@ -30,4 +32,7 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div>
+<div class="text-right mt-4">
+  <%= link_to "View All Portfolios", all_portfolio_path, class:"btn btn-info text-right"  %>
 </div>

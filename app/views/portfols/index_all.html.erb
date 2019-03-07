@@ -1,0 +1,25 @@
+<h1 class="display-2 home-title text-center">This is my <span id="my-name">Portfolio!!</span></h1>
+
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <% @portfols.each do |portfol| %>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+              <%= image_tag portfol.thumb_image, class: 'card-img-top', alt:"Portfolio image" %>
+            <div class="card-body text-center">
+              <p class="card-text">
+                <h4 class="card-title"><%= portfol.title %></h4>
+                <h6 class="card-title"> <%= portfol.subtitle %> </h6>
+              </p>
+              <div class="text-center">
+                <%= link_to "View description", portfol_path(portfol), class: "btn btn-sm btn-outline-secondary" %>
+                <%= link_to "Go Live Page", portfol.url_address, class: "btn btn-sm btn-outline-secondary" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
