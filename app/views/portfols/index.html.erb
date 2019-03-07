@@ -1,7 +1,31 @@
-<div class="album text-muted">
-  <div class="container">
-    <div class="row sortable">
-      <%= render partial:'portfol', collection: @portfols %>
-    </div>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <% @portfols.each_with_index do |portfol, idx| %>
+      <li data-target="carouselExampleIndicators" data-slide-to="<%= idx %>" class="<%= idx === 0 ? 'active' : ''  %>"</li>
+    <% end %>
+  </ol>
+  <!-- inner carousel -->
+  <div class="carousel-inner">
+    <% @portfols.each_with_index do |portfol, idx| %>
+      <div class="carousel-item <%= idx.zero? ? 'active' : '' %>">
+        <%= link_to portfol.url_address do %>
+          <%= image_tag(portfol.main_image, class: 'd-block w-100 image-fluid') %>
+        <% end %>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>...</h5>
+          <p>...</p>
+        </div>
+      </div>
+    <% end %>
   </div>
+  <!-- Controls -->
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
