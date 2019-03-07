@@ -19,4 +19,7 @@ class Portfol < ApplicationRecord
     self.main_image ||= Placeholder.image_generator('600', '400')
     self.thumb_image ||= Placeholder.image_generator('350', '200')
   end
+  
+  mount_uploader :main_image, PortfolUploader
+  mount_uploader :main_image, PortfolUploader
 end

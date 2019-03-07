@@ -1,7 +1,7 @@
 <div class="continer portfol-show-all">
   <div class="row">
     <div class="col-md-7 text-center">
-      <%= image_tag @portfol.main_image, class:"image-fluid", alt: 'Main'if @portfol.main_image %>
+      <%= image_tag @portfol.main_image.url, class:"image-fluid", alt: 'Main', width: '80%' %>
     </div>
     <div class="col-md-5 text-center">
       <h1 class="portfol-show-title"> <%= @portfol.title %></h1>

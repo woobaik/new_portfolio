@@ -23,7 +23,7 @@ end
 puts '##### Added 10 blog posts ######'
 
 5.times do |portfol|
-  Portfol.create(title: "portfol #{portfol + 1}",
+  Portfol.create!(title: "portfol #{portfol + 1}",
                  subtitle: "ruby on rails #{portfol + 1}",
                  body: 'Lorem ipsum dolor sit amet, consectetur
                         adipisicing elit, sed do eiusmod tempor
@@ -46,7 +46,7 @@ puts '##### 5 Portfolio item has created #####'
 3.times do |technology|
   Technology.create(
     name: "Technology #{technology}",
-    portfol_id: Portfol.last.id
+    portfol_id: 3
   )
 end
 

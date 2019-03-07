@@ -1,6 +1,7 @@
 class PortfolsController < ApplicationController
     before_action :set_title
     before_action :find_portfolio, only: [:show, :edit, :update, :delete]
+    before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
     def index
       @portfols = Portfol.by_position
     end
