@@ -43,6 +43,10 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
+# https://rubygems.org/gems/carrierwave-aws
+gem 'carrierwave-aws', '~> 1.3'
+# https://rubygems.org/gems/mini_magick
+gem 'mini_magick', '~> 4.9', '>= 4.9.3'
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
