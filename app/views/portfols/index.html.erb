@@ -1,8 +1,10 @@
+<h1 class="display-2 home-title text-center">This is my <span id="my-name">Portfolio!!</span></h1>
+
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <% @portfols.each_with_index do |portfol, idx| %>
-      <li data-target="carouselExampleIndicators" data-slide-to="<%= idx %>" class="<%= idx === 0 ? 'active' : ''  %>"</li>
+      <li data-target="carouselExampleIndicators" data-slide-to="<%= idx %>" class="<%= idx === 0 ? 'active' : 'bg'  %>"</li>
     <% end %>
   </ol>
   <!-- inner carousel -->
@@ -13,8 +15,8 @@
           <%= image_tag(portfol.main_image, class: 'd-block w-100 image-fluid') %>
         <% end %>
         <div class="carousel-caption d-none d-md-block">
-          <h5>...</h5>
-          <p>...</p>
+          <h5 class="portfol-title">[ <%= portfol.title %> ]</h5>
+          <p class="portfol-subtitle"> <%= portfol.subtitle %> </p>
         </div>
       </div>
     <% end %>

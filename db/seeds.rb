@@ -37,7 +37,7 @@ puts '##### Added 10 blog posts ######'
                         est laborum.',
                   main_image: 'https://via.placeholder.com/350x150',
                   thumb_image: 'https://via.placeholder.com/200x80',
-                  url_address: 'https://wwww.google.com')
+                  url_address: 'https://www.google.com')
 end
 
 
