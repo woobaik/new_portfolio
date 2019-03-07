@@ -47,6 +47,8 @@ end
 gem 'carrierwave-aws', '~> 1.3'
 # https://rubygems.org/gems/mini_magick
 gem 'mini_magick', '~> 4.9', '>= 4.9.3'
+# https://rubygems.org/gems/dotenv
+gem 'dotenv', '~> 2.7', '>= 2.7.1'
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.

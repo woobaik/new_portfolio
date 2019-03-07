@@ -109,6 +109,7 @@ GEM
       railties (>= 4.1.0, < 6.0)
       responders
       warden (~> 1.2.3)
+    dotenv (2.7.1)
     erubi (1.8.0)
     execjs (2.7.0)
     ffi (1.9.25)
@@ -270,6 +271,7 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise
+  dotenv (~> 2.7, >= 2.7.1)
   font-awesome-sass (~> 5.6, >= 5.6.1)
   friendly_id (~> 5.0.0)
   jbuilder (~> 2.5)
