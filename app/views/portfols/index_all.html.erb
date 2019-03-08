@@ -6,7 +6,7 @@
       <% @portfols.each do |portfol| %>
         <div class="col-md-4">
           <div class="card mb-4 box-shadow">
-              <%= image_tag portfol.thumb_image, class: 'card-img-top', alt:"Portfolio image" %>
+              <%= image_tag portfol.thumb_image.url, class: 'card-img-top', alt:"Portfolio image" if portfol.thumb_image.url %>
             <div class="card-body text-center">
               <p class="card-text">
                 <h4 class="card-title"><%= portfol.title %></h4>

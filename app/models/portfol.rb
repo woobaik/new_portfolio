@@ -5,8 +5,7 @@ class Portfol < ApplicationRecord
 
   include Placeholder
   validates :title, :subtitle,
-            :body, :main_image,
-            :thumb_image,
+            :body,
             presence: true
 
   after_initialize :set_defaults
@@ -21,5 +20,5 @@ class Portfol < ApplicationRecord
   end
   
   mount_uploader :main_image, PortfolUploader
-  mount_uploader :main_image, PortfolUploader
+  mount_uploader :thumb_image, PortfolUploader
 end

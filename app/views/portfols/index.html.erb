@@ -14,7 +14,7 @@
     <% @portfols.each_with_index do |portfol, idx| %>
       <div class="carousel-item <%= idx.zero? ? 'active' : '' %>">
         <%= link_to portfol_path(portfol) do %>
-          <%= image_tag portfol.main_image.url, class: 'd-block image-responsive', size: '1200x600' if portfol.main_image %>
+          <%= image_tag portfol.main_image.url, class: 'd-block image-responsive', size: '1200x600' if portfol.main_image.url %>
         <% end %>
         <div class="carousel-caption d-none d-md-block">
           <h5 class="portfol-title">[ <%= portfol.title %> ]</h5>

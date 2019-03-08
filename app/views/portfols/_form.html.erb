@@ -24,15 +24,14 @@
     <%= f.text_area :body %>
   </p>
   <h4>Technology Used: </h4>
-  <ul>
-    <%= f.fields_for :technologies do |tech_form|%>
-      <li>
-        <%= tech_form.label :name %>
-        <%= tech_form.text_field :name %>
-      </li>
-    <% end %>
-  </ul>
-
+    <div class="tasks">
+      <%= f.fields_for :technologies do |tech_form|%>
+        <%= render 'technology_fields', f: tech_form %>
+      <% end %>
+    </div>
+    <div class="links">
+      <%= link_to_add_association 'add task', f, :technologies %>
+    </div>
   <%= f.submit submit %>
 
 <% end %>

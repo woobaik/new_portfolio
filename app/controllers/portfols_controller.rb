@@ -20,7 +20,6 @@ class PortfolsController < ApplicationController
 
     def new
       @portfol = Portfol.new
-      3.times {@portfol.technologies.build}
     end
 
     def create
@@ -31,6 +30,7 @@ class PortfolsController < ApplicationController
       else
         render :new
       end
+    
     end
 
     def edit
@@ -68,6 +68,6 @@ class PortfolsController < ApplicationController
                                       :body,
                                       :main_image,
                                       :thumb_image,
-                                      technologies_attributes: [:name])
+                                      technologies_attributes: [:name, :_destroy])
     end
 end
