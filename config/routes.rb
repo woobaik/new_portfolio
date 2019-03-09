@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'pages/home'
   get 'pages/about'
   get 'pages/contact'
+  get 'pages/tech-tweet'
   resources :blogs do
     member do
       get 'toggle_status'

@@ -53,6 +53,9 @@ gem 'mini_magick', '~> 4.9', '>= 4.9.3'
  gem 'cocoon', '~> 1.2', '>= 1.2.12'
  # https://github.com/RobinBrouwer/gritter
  gem 'gritter', '~> 1.2'
+# https://github.com/sferik/twitter
+
+gem 'twitter', '~> 6.2'
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
