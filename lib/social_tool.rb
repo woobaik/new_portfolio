@@ -8,9 +8,8 @@ module SocialTool
     config.access_token_secret = ENV.fetch('TWITTER_ACCESS_SECRET')
     end
     
-    client.search("#rubyonrails -rt", lang: "en", result_type: 'recent').take(8).collect do |tweet|
+    search_result = client.search("#rubyonrails -rt", lang: "en", result_type: 'recent').take(8).collect do |tweet|
       "#{tweet.text} by #{tweet.user.screen_name}"
     end
-  end
-  
+  end  
 end
