@@ -24,10 +24,12 @@ class PortfolsController < ApplicationController
 
     def create
       @portfol = Portfol.new(portfol_params)
-
+      
       if @portfol.save
+        flash[:success] = "Your Entry has been successfully added."
         redirect_to @portfol
       else
+        flash[:error] = "There was something wrong with your entry."
         render :new
       end
     
@@ -38,7 +40,11 @@ class PortfolsController < ApplicationController
 
     def update
       if @portfol.update
+        flash[:success] = "Your Portfolio has been successfully updated!"
         redirect_to @portfol
+      else
+        flash[:errror] = "There was something wrong with your entry."
+        render :edit
       end
     end
 
